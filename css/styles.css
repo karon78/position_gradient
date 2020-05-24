@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+--colorPinkLight: #ffbe98;
+--colorPinkDark: #FA647F;
+
+--colorBlueLight: #8BC8F6;
+--colorBlueDark: #018CDF;
+
+--colorGreenLight: #7DD8D1;
+--colorGreenDark: #43CEB2;
+}
+
+
+
+.card {
+    max-width: 350px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+div {
+    font-family: sans-serif;
+}
+
+.card::after, .card::before {
+    content: '';
+    position: absolute;
+    background: white;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.card::after {
+    --size: 10rem;
+    height: var(--size);
+    width: var(--size);
+    top: calc(var(--size) / -5);
+    right: calc(var(--size) / -2);
+}
+
+.card::before {
+    --size: 10rem;
+    height: var(--size);
+    width: var(--size);
+    bottom: calc(var(--size) / -2);
+    right: calc(var(--size) / -10);
+}
+
+
+
+.card1 {
+    background: rgb(255,190,152);
+    background: linear-gradient(90deg, rgba(255,190,152,1) 0%, rgba(250,100,127,1) 100%);
+
+}
+
+.card2 {
+    background: rgb(139,200,246);
+    background: linear-gradient(90deg, rgba(139,200,246,1) 0%, rgba(1,140,223,1) 100%);
+}
+
+.card3 {
+    background: rgb(123,217,209);
+    background: linear-gradient(90deg, rgba(123,217,209,1) 0%, rgba(7,179,158,1) 100%);
+}
+svg {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+
+}
+.cell1{
+    text-align: left;
+    font-size: 15px;
+
+}
+.cell2{
+    text-align: left;
+    line-height: 2em;
+
+}
+.cell3{
+    text-align: left;
+    font-size: 15px;
+    line-height: 2em;
+
+}
